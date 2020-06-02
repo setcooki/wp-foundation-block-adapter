@@ -45,7 +45,6 @@ class Plugin
             {
                 $deps = (array)apply_filters('wpfba/styles/dependencies', []);
                 $vers = wpfba_version('full');
-
                 wp_dequeue_style('wp-block-library');
                 wp_dequeue_style('wp-block-library-theme');
                 wp_enqueue_style('wpfba', FOUNDATION_BLOCK_ADAPTER_URL . 'static/css/plugin.min.css', $deps, $vers);
@@ -95,7 +94,6 @@ class Plugin
      */
     public function activate()
     {
-
     }
 
 
@@ -112,6 +110,6 @@ class Plugin
      */
     public static function uninstall()
     {
-
+        delete_option('wpfba_settings');
     }
 }
