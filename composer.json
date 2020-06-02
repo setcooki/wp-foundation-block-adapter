@@ -1,0 +1,29 @@
+{
+  "name": "setcooki/wp-foundation-block-adapter",
+  "description": "Wordpress Foundation Block Adapter",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Frank Mueller",
+      "email": "set@cooki.me",
+      "homepage": "http://set.cooki.me",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/setcooki/wp-foundation-block-adapter/issues"
+  },
+  "type": "wordpress-plugin",
+  "config": {
+    "vendor-dir": "lib/vendor"
+  },
+  "require": {
+    "php": ">=7.1.2",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Setcooki\\Wp\\Foundation\\Block\\Adapter\\": "src"
+    }
+  }
+}

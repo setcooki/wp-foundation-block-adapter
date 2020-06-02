@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import "~@wordpress/block-library/src/columns/style.scss";
+
+@mixin wp-block-columns() {
+  .wp-block-columns {
+
+    .wp-block-column-inner {
+      width: 100%;
+      height: 100%;
+    }
+
+    .wp-block-column {
+      @media (min-width: #{ ($break-small) }) and (max-width: #{ ($break-medium - 1) }) {
+        &:nth-child(even) {
+          margin-left: $grid-unit-20;
+        }
+      }
+    }
+  }
+}

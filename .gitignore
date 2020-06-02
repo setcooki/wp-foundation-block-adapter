@@ -1,0 +1,9 @@
+.DS_Store
+.git
+.idea/
+.log
+/node_modules
+/.sass-cache
+/composer.lock
+/wordpress
+/package-lock.json

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import "globals";
+@import "columns";
+@import "quote";
+@import "image";
+@import "button";
+@import "cover";
+@import "embed";
+
+@include wp-block-columns();
+@include wp-block-button();
+@include wp-block-embed();
+@include wp-block-quote();
+@include wp-block-image();

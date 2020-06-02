@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import "utils";
+@import "~foundation-sites/scss/foundation";
+//@import "~@wordpress/base-styles/variables";
+@import "~@wordpress/base-styles/mixins";
+@import "~@wordpress/base-styles/breakpoints";
+
+$grid-unit: grid-unit() !default;
+$grid-unit-05: 0.5 * $grid-unit !default;
+$grid-unit-10: 1 * $grid-unit !default;
+$grid-unit-15: 1.5 * $grid-unit !default;
+$grid-unit-20: 2 * $grid-unit !default;
+$grid-unit-30: 3 * $grid-unit !default;
+$grid-unit-40: 4 * $grid-unit !default;
+$grid-unit-50: 5 * $grid-unit !default;
+$grid-unit-60: 6 * $grid-unit !default;
+
+$default-block-margin: $grid-unit-20 !default;
+$border-width: 1px !default;
+$border-width-focus: 1.5px !default;
+$border-width-tab: 4px !default;
+
+$block-padding: rem-to-px($global-padding) !default;
+$block-spacing: rem-to-px($global-margin) !default;
+$block-bg-padding--h: $block-padding + $block-spacing + 2px !default;
+$block-bg-padding--v: $block-padding + $block-spacing + 2px !default;
+
+$content-width: 580px !default;
+$light-gray-100: $light-gray !default;
+$light-gray-500: $medium-gray !default;
+$light-gray-900: $dark-gray !default;

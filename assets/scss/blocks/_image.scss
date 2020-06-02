@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@mixin wp-block-image() {
+  .wp-block-image {
+    &.is-style-rounded img {
+      border-radius: 9999px;
+    }
+
+    &.is-style-circle-mask img {
+      border-radius: 9999px;
+      @supports (mask-image: none) or (-webkit-mask-image: none) {
+        /* stylelint-disable */
+        mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
+        /* stylelint-enable */
+        mask-mode: alpha;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        border-radius: 0;
+      }
+    }
+
+    &.alignfull img,
+    &.alignwide img {
+      width: 100%;
+    }
+
+    .alignleft,
+    .alignright,
+    .aligncenter,
+    &.is-resized {
+      display: table;
+
+      > figcaption {
+        display: table-caption;
+        caption-side: bottom;
+      }
+    }
+
+    .alignleft {
+      /*rtl:ignore*/
+      float: left;
+      /*rtl:ignore*/
+      margin-left: 0;
+      margin-right: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .alignright {
+      /*rtl:ignore*/
+      float: right;
+      /*rtl:ignore*/
+      margin-right: 0;
+      margin-left: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}

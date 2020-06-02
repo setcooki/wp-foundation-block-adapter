@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@mixin wp-block-embed() {
+  .wp-block-embed {
+    display: table;
+
+    &.is-type-video {
+      width: 100%;
+      height: auto;
+
+      &.wp-embed-aspect-1-1 > .wp-block-embed__wrapper {
+        @include responsive-embed(1 by 1);
+      }
+
+      &.wp-embed-aspect-1-2 > .wp-block-embed__wrapper {
+        @include responsive-embed(1 by 2);
+      }
+
+      &.wp-embed-aspect-4-3 > .wp-block-embed__wrapper {
+        @include responsive-embed(4 by 3);
+      }
+
+      &.wp-embed-aspect-16-9 > .wp-block-embed__wrapper {
+        @include responsive-embed(16 by 9);
+      }
+    }
+
+    figcaption {
+      display: table-caption;
+      caption-side: bottom;
+    }
+  }
+}

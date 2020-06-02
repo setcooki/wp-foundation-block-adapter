@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@mixin wp-block-button() {
+  .wp-block-button {
+
+    .wp-block-button__link {
+      @include button();
+      border-radius: 0;
+    }
+
+    &.is-style-outline > .wp-block-button__link {
+      @include button-hollow();
+      @include button-hollow-style();
+    }
+
+    &.no-border-radius > .wp-block-button__link {
+      border-radius: 0 !important;
+    }
+  }
+}
