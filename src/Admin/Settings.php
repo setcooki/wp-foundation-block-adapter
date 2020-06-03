@@ -58,7 +58,7 @@ class Settings
             }
         }
 
-        $settings = json_decode(get_option('wpfba_settings', new \stdClass()));
+        $settings = json_decode((string)get_option('wpfba_settings', ''));
         $this->menu->settings = new \stdClass();
         $this->menu->settings->colors = (isset($settings->colors)) ? stripslashes($settings->colors) : '';
 

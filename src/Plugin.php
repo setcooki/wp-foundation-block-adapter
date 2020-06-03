@@ -77,7 +77,7 @@ class Plugin
      */
     public function setup()
     {
-        $settings = json_decode(get_option('wpfba_settings', new \stdClass()));
+        $settings = json_decode((string)get_option('wpfba_settings', ''));
 
         add_theme_support('align-wide');
         if(isset($settings->colors) && ($colors = json_decode(stripslashes($settings->colors), true)) !== null)
