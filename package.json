@@ -1,7 +1,7 @@
 {
   "name": "@setcooki/wp-foundation-block-adapter",
   "description": "Wordpress Foundation Gutenberb Block Adapter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "Wordpress",
     "Foundation",
