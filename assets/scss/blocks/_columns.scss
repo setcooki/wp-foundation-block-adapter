@@ -11,7 +11,18 @@
     }
 
     .wp-block-column {
+
+      &:not(:last-child) {
+        margin-bottom: $grid-unit-20;
+      }
+
+      @media (min-width: #{ ($break-medium) }) {
+        margin-bottom: 0;
+      }
+
       @media (min-width: #{ ($break-small) }) and (max-width: #{ ($break-medium - 1) }) {
+
+        flex-basis: calc(50% - $grid-unit-10) !important;
         &:nth-child(even) {
           margin-left: $grid-unit-20;
         }

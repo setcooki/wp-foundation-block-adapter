@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "utils";
+@import "utils/utils";
 @import "~foundation-sites/scss/foundation";
 //@import "~@wordpress/base-styles/variables";
 @import "~@wordpress/base-styles/mixins";
@@ -16,6 +16,23 @@ $grid-unit-40: 4 * $grid-unit !default;
 $grid-unit-50: 5 * $grid-unit !default;
 $grid-unit-60: 6 * $grid-unit !default;
 
+$text-styles: (
+  small: (
+    'small': ('font-size': rem-calc(13)),
+    'normal': ('font-size': rem-calc(16)),
+    'medium': ('font-size': rem-calc(20)),
+    'large': ('font-size': rem-calc(36)),
+    'larger': ('font-size': rem-calc(42))
+  ),
+  medium: (
+    'small': ('font-size': rem-calc(13)),
+    'normal': ('font-size': rem-calc(16)),
+    'medium': ('font-size': rem-calc(20)),
+    'large': ('font-size': rem-calc(36)),
+    'larger': ('font-size': rem-calc(42))
+  ),
+);
+
 $default-block-margin: $grid-unit-20 !default;
 $border-width: 1px !default;
 $border-width-focus: 1.5px !default;
@@ -30,3 +47,5 @@ $content-width: 580px !default;
 $light-gray-100: $light-gray !default;
 $light-gray-500: $medium-gray !default;
 $light-gray-900: $dark-gray !default;
+
+

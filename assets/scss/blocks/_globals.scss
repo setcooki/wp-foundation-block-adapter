@@ -11,3 +11,37 @@
 .alignleft {
   text-align: left;
 }
+
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-left {
+  text-align: left;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+
+.has-small-font-size {
+  @include text-styles(small);
+}
+
+.has-regular-font-size,
+.has-normal-font-size {
+  @include text-styles(regular);
+}
+
+.has-medium-font-size {
+  @include text-styles(medium);
+}
+
+.has-large-font-size {
+  @include text-styles(large);
+}
+
+.has-larger-font-size,
+.has-huge-font-size {
+  @include text-styles(larger);
+}

@@ -7,9 +7,11 @@
 @import "button";
 @import "cover";
 @import "embed";
+@import "media-text";
 
 @include wp-block-columns();
 @include wp-block-button();
 @include wp-block-embed();
 @include wp-block-quote();
 @include wp-block-image();
+@include wp-block-media-text();

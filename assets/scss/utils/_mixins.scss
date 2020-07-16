@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@mixin text-styles($size) {
+  @each $breakpoint, $styles in $text-styles {
+    @include breakpoint($breakpoint) {
+      @if map-has-key($styles, $size) {
+        $style: map-get($styles, $size);
+        @each $key, $value in $style {
+          #{$key}: #{$value};
+        }
+      }
+    }
+  }
+}
