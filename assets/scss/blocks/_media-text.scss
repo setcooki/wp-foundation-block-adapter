@@ -3,4 +3,7 @@
 @import "~@wordpress/block-library/src/media-text/style.scss";
 
 @mixin wp-block-media-text() {
+  .wp-block-media-text {
+    margin-bottom: $block-spacing;
+  }
 }

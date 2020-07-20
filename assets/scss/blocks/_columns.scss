@@ -13,7 +13,7 @@
     .wp-block-column {
 
       &:not(:last-child) {
-        margin-bottom: $grid-unit-20;
+        margin-bottom: $block-spacing;
       }
 
       @media (min-width: #{ ($break-medium) }) {

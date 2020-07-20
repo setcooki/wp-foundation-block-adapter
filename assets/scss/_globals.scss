@@ -33,15 +33,15 @@ $text-styles: (
   ),
 );
 
-$default-block-margin: $grid-unit-20 !default;
 $border-width: 1px !default;
 $border-width-focus: 1.5px !default;
 $border-width-tab: 4px !default;
 
-$block-padding: rem-to-px($global-padding) !default;
-$block-spacing: rem-to-px($global-margin) !default;
-$block-bg-padding--h: $block-padding + $block-spacing + 2px !default;
-$block-bg-padding--v: $block-padding + $block-spacing + 2px !default;
+$block-padding: $global-padding !default;
+$block-spacing: $global-margin !default;
+$block-bg-padding--h: $block-padding + $block-spacing !default;
+$block-bg-padding--v: $block-padding + $block-spacing !default;
+$default-block-margin: $block-spacing !default;
 
 $content-width: 580px !default;
 $light-gray-100: $light-gray !default;

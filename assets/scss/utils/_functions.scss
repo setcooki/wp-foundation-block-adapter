@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 @function rem-to-px($rem) {
-  $value: unitless-calc($rem) * $global-font-size;
+  @if (str-index($global_font-size, '%')) {
+    $base: strip-unit($global_font-size);
+  }
+  $value: unitless-calc($rem) * $base;
   $value: round($value);
   @return #{$value}px;
 }
