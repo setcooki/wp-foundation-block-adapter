@@ -43,11 +43,12 @@ class Plugin
         {
             add_action('wp_enqueue_scripts', function()
             {
+                $dev = preg_match('=\.test$=i', $_SERVER['HTTP_HOST']);
                 $deps = (array)apply_filters('wpfba/styles/dependencies', []);
                 $vers = wpfba_version('full');
                 wp_dequeue_style('wp-block-library');
                 wp_dequeue_style('wp-block-library-theme');
-                wp_enqueue_style('wpfba', FOUNDATION_BLOCK_ADAPTER_URL . 'static/css/plugin.min.css', $deps, $vers);
+                wp_enqueue_style('wpfba', FOUNDATION_BLOCK_ADAPTER_URL . 'static/css/plugin'.(!$dev ? '.min' : '').'.css', $deps, $vers);
             }, 9999);
         }
 
