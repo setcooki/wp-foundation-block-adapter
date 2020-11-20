@@ -11,10 +11,7 @@
     }
 
     .wp-block-column {
-
-      &:not(:last-child) {
-        margin-bottom: $block-spacing;
-      }
+      margin-bottom: $block-spacing;
 
       @media (min-width: #{ ($break-medium) }) {
         margin-bottom: 0;

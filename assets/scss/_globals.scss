@@ -5,6 +5,7 @@
 //@import "~@wordpress/base-styles/variables";
 @import "~@wordpress/base-styles/mixins";
 @import "~@wordpress/base-styles/breakpoints";
+@import "~@wordpress/base-styles/z-index";
 
 $grid-unit: grid-unit() !default;
 $grid-unit-05: 0.5 * $grid-unit !default;
