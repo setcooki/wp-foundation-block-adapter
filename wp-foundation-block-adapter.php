@@ -6,7 +6,7 @@ Description: Wordpress Foundation Block Adapter
 Author: Frank Mueller <set@cooki.me>
 Author URI: https://github.com/setcooki/
 Text Domain: wpfba
-Version: 0.0.3
+Version: 0.0.4
 */
 
 if(!defined('FOUNDATION_BLOCK_ADAPTER_DOMAIN'))
